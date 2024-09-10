@@ -19,5 +19,6 @@ jobs:
         with:
           tool: sonar
           file: classic-webgoat.net.sonar.issues.json
+          pixee-api-url: 40.87.80.74
           sonar-token: ${{ secrets.SONAR_TOKEN }}
           sonar-component-key: ${{ secrets.SONAR_COMPONENT_KEY }}
