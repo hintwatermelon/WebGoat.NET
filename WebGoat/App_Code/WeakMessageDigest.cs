@@ -24,7 +24,7 @@ namespace OWASP.WebGoat.NET.App_Code
             }
 
             log.Debug(string.Format("Bytes for {0}...", msg));
-            log.Debug(Print(bytes));
+            log.DebugFormat("{0}", Print(bytes));
 
             return ascii.GetString(bytes);
         }
