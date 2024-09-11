@@ -17,7 +17,7 @@ namespace OWASP.WebGoat.NET.App_Code.DB
 
             string dbType = configFile.Get(DbConstants.KEY_DB_TYPE);
 
-            log.Info("Creating provider for" + dbType);
+            log.InfoFormat("Creating provider for {0}", dbType);
 
             switch (dbType)
             {

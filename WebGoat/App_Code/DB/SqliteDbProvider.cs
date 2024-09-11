@@ -299,7 +299,7 @@ namespace OWASP.WebGoat.NET.App_Code.DB
                 
                     int rows_added = command.ExecuteNonQuery();
                     
-                    log.Info("Rows Added: " + rows_added + " to comment table");
+                    log.InfoFormat("Rows Added: {0} to comment table", rows_added);
                 }
             }
             catch (Exception ex)

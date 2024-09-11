@@ -22,9 +22,8 @@ namespace OWASP.WebGoat.NET.Content
         {
             string result = WeakMessageDigest.GenerateWeakDigest(txtBoxMsg.Text);
 
-            log.Info(string.Format("Result for {0} is: {1}", txtBoxMsg.Text, result));
+            log.InfoFormat("Result for {0} is: {1}", txtBoxMsg.Text, result);
             lblResultDigest.Text = result;
         }
     }    
 }
-
